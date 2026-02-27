@@ -35,6 +35,7 @@ for i = 1:L
   j = mod(i,L)+1;
   H = H - t*(cdag{i}*c{j} + cdag{j}*c{i}) + V*n{i}*n{j};
 end
+H = H + 2.5*Ntot;
 
 % ---- Diagonalization for the smallest 6 eigenvalues ----
 
