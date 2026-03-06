@@ -1,7 +1,7 @@
 % --- Model Parameters ----
 L = 20;
 J = 1;
-h = 1;
+h = 1.1;
 
 % ---- 1-site operators ----
 Sx_1site = sparse([0 1;...

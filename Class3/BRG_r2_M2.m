@@ -1,7 +1,7 @@
 
 N_iter = 10;
 J = 1;
-h = 4;
+h = 1.28;
 
 S_x = [0 1; 1 0];
 S_z = [1 0; 0 -1];
@@ -11,7 +11,9 @@ hvals = h;
 Jvals = J;
 Cvals = C;
 for iter = 1:N_iter
-  H = h*(kron(S_z,eye(2))) + h*kron(eye(2),S_z) - J*kron(S_x,S_x);
+  H = h*(kron(S_z,eye(2))) + ...
+      h*kron(eye(2),S_z) -...
+      J*kron(S_x,S_x);
   [eigvec,eigval] = eig(H);
   eigval = diag(eigval);
   eigvec = eigvec(:,1:2);
@@ -27,4 +29,8 @@ for iter = 1:N_iter
   C = 2*C + (eigval(2)+eigval(1))/2;
   Cvals = [Cvals,C];
 end
+
+hvals
+Jvals
+Jvals./hvals
 

@@ -1,7 +1,7 @@
 
 N_iter = 10;
 J = 1;
-h = 1;
+h = 1.1;
 r = 4;
 
 S_x = [0 1; 1 0];
@@ -35,4 +35,8 @@ for iter = 1:N_iter
   C = r*C + (eigval(2)+eigval(1))/2;
   Cvals = [Cvals,C];
 end
+
+hvals
+Jvals
+Jvals./hvals
 

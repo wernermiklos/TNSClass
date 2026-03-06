@@ -1,5 +1,5 @@
 % --- Model Parameters ----
-L = 18;
+L = 16;
 t = 1;
 V = 2;
 N_elec = L/2;   %electron number
