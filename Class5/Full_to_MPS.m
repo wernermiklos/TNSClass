@@ -4,7 +4,7 @@
 TFIM_ED_OBC_sparse;     %this will provide us Psi, d, L
 
 % --- Parameters ---
-cut = L;    %
+cut = L/2;    %
 
 
 
