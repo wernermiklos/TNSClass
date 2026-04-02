@@ -1,11 +1,11 @@
 L0 = 4;   %initial chain length
 L = 100;
 J = 1;
-Delta = 1;
+Delta = 2;
 d = 2;   %local dimension
 M = 32;
 HamMPO = MPO_XXZ_full(L0,J,Delta);
-Nsweep = 4;
+Nsweep = 2;
 
 % INFINITE CHAIN (CHAIN-GROWTH) PART
 % initialization of 1-site left and right block using the first and last MPO
