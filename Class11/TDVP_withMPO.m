@@ -103,9 +103,11 @@ for sweep_iter = 1:Nsweep
       RightBlocks(end) = [];
     end
   end
+
   t = t + dt / 2;
   Szdata(end+1,:) = 0;
   times(end+1,1) = t;
+  % Right to left sweep
   while length(MPS.LeftMatrices) > 0
 
     % TWO SITE FORWARD
@@ -165,10 +167,6 @@ for sweep_iter = 1:Nsweep
     end
   end
 
-
-
-  % left end <-- right end
- 
 end
 plot(times,Szdata(:,25));
 hold on
