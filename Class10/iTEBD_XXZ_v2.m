@@ -22,7 +22,7 @@ Jxy    = 1.0;
 Jz     = 1.0;
 dt     = 0.05;
 Nstep  = 400;
-chiMax = 256;
+chiMax = 40;
 tol    = 1e-12;
 
 d = 2;

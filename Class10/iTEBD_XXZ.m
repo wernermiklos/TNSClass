@@ -20,8 +20,8 @@ clear; close all; clc;
 %% -------------------- Parameters --------------------
 Jxy    = 1.0;
 Jz     = 1.0;
-dt     = 0.05;
-Nstep  = 400;
+dt     = 0.04;
+Nstep  = 100;
 chiMax = 40;
 tol    = 1e-12;
 
